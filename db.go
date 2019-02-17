@@ -2,7 +2,7 @@ package beescaffold
 
 import(
 	_ "github.com/go-sql-driver/mysql"
-	_"github.com/mattn/go-sqlite3"
+	// _"github.com/mattn/go-sqlite3"
 	"github.com/go-xorm/xorm"
 	"strings"
 	"fmt"
