@@ -63,7 +63,10 @@ func Create_Mysql_with_host_port_u_p_db(_host string,_port int,_u string,_p stri
 	}
 	//初始化所有字段和标明为小写
 	eng.SetMapper(ISameMapper{})
-
+	
+	//注册Token模块
+	Register_tokenmodel_with_xorm(eng)
+	
 	//线程池处理
 	eng.DB().SetMaxIdleConns(50)
 	eng.DB().SetMaxOpenConns(500)
